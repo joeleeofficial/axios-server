@@ -14,7 +14,7 @@ function getTodos() {
   //   .catch(err => console.error(err));
 
   axios
-    .get('https://brawlie.joelee.ga/stats', {
+    .get('https://brawlstars-1.jiahui2.repl.co/stats', {
       timeout: 5000
     })
     .then(res => showOutput(res))

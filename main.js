@@ -14,7 +14,7 @@ function getTodos() {
   //   .catch(err => console.error(err));
 
   axios
-    .get('http://brawlie.joelee.ga/stats', {
+    .get('https://o.pixelwrap.repl.co/username', {
       timeout: 5000
     })
     .then(res => showOutput(res))
@@ -24,7 +24,7 @@ function getTodos() {
 // POST REQUEST
 function addTodo() {
   axios
-    .post('https://jsonplaceholder.typicode.com/todos', {
+    .post('https://o.pixelwrap.repl.co/username', {
       title: 'New Todo',
       completed: false
     })

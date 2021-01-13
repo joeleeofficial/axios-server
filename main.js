@@ -14,7 +14,7 @@ function getTodos() {
   //   .catch(err => console.error(err));
 
   axios
-    .get('https://o.pixelwrap.repl.co/username', {
+    .get('https://botblock.org/api/bots/270904126974590976', {
       timeout: 5000
     })
     .then(res => showOutput(res))

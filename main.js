@@ -1,5 +1,5 @@
 axios.defaults.headers.common['X-Auth-Token'] =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c';
+  '0c134623350a42d3faf0ab517deca1a8a8ea3b9d9524f9e1df4d4fc9d95d0a74eed3acfc067d4b5cf3b4fffc';
 
 // GET REQUEST
 function getTodos() {
@@ -67,13 +67,13 @@ function customHeaders() {
   const config = {
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'sometoken'
+      Authorization: '0c134623350a42d3faf0ab517deca1a8a8ea3b9d9524f9e1df4d4fc9d95d0a74eed3acfc067d4b5cf3b4fffc'
     }
   };
 
   axios
-    .post(
-      'https://jsonplaceholder.typicode.com/todos',
+    .get(
+      'https://dblstatistics.com/api/bots/792311725181239307',
       {
         title: 'New Todo',
         completed: false

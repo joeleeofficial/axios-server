@@ -1,6 +1,12 @@
-axios.defaults.headers.common['X-Auth-Token'] =
-  '0c134623350a42d3faf0ab517deca1a8a8ea3b9d9524f9e1df4d4fc9d95d0a74eed3acfc067d4b5cf3b4fffc';
+const config = {
+   headers: {
+    'Accept': 'application/json',
+    authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjE3ZjRlNDJhLTUxYWUtNGM0OC1hZTJlLWQ4NWZhYmNjNTAyNyIsImlhdCI6MTYwOTUwNzczNiwic3ViIjoiZGV2ZWxvcGVyL2YzNWI2ZTNhLTE3MzctYzQwNS1iMTMzLTI2ZThiYWVmZGU0OSIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMTI4LjEyOC4xMjguMTI4Il0sInR5cGUiOiJjbGllbnQifV19.OfwFx_5uq7C_8UFVWZoPA_9S42Rsm9qBMUhOAerpbhx3_NNiaj-h8VNqU8khvPm1aSnwma8i4K2XM4JpROokuA'
 
+   }
+
+
+}
 // GET REQUEST
 function getTodos() {
   // axios({
@@ -14,9 +20,7 @@ function getTodos() {
   //   .catch(err => console.error(err));
 
   axios
-    .get('https://botblock.org/api/bots/270904126974590976', {
-      timeout: 5000
-    })
+    .get('https://bsproxy.royaleapi.dev/v1/players/%2382PGQVJ2L', config)
     .then(res => showOutput(res))
     .catch(err => console.error(err));
 }
